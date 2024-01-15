@@ -9,15 +9,16 @@ import {
 	Menu,
 	MenuItem,
 	MenuList,
+	Spacer,
 	MenuButton,
 	IconButton,
 	useColorModeValue,
 } from '@chakra-ui/react'
 import { Link } from '@chakra-ui/next-js'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import { Player } from '@lordicon/react'
 import { ReactNode } from 'react'
 import Logo from './logo'
+import ThemeToggleButton from './theme-toggle-button'
 
 const LinkItem = ({
 	href,
@@ -29,45 +30,76 @@ const LinkItem = ({
 	children: ReactNode
 }) => {
 	const active = path === href
-	const inActiveColor = useColorModeValue('gray.200', 'whiteAlpha.900')
+	const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
 
 	return (
 		<Link
 			href={href}
 			p={2}
-			bg={active ? 'glassTeal' : undefined}
-			color={active ? '#202023' : inActiveColor}
+			bg={active ? 'grassTeal' : undefined}
+			color={active ? '#202023' : inactiveColor}
+			borderRadius="lg"
 		>
 			{children}
 		</Link>
 	)
 }
 
-const NavBar = (props: { path: string }) => {
+const NavBar = ({ path }: { path: string }) => {
 	return (
 		<Box
 			position="fixed"
 			as="nav"
 			w="100%"
+			mt={2}
 			bg={useColorModeValue('#ffffff40', '#20202380')}
 			backdropFilter="auto"
 			backdropBlur="10px"
 			zIndex={1}
-			{...props}
 		>
-			<Container
-				display="flex"
-				p={2}
-				maxW="md"
-				flexWrap="wrap"
-				alignItems="center"
-				justifyContent="space-between"
-			>
+			<Container display="flex" p={2} maxW="container.md" flexWrap="wrap">
 				<Flex align="center" mr={5}>
 					<Heading as="h1" size="lg" letterSpacing="tighter">
 						<Logo />
 					</Heading>
 				</Flex>
+
+				<Stack
+					direction={{ base: 'column', md: 'row' }}
+					display={{ base: 'none', md: 'flex' }}
+					w={{ base: 'full', md: 'auto' }}
+					alignItems="center"
+					flexGrow={1}
+					mt={{ base: 4, md: 0 }}
+				>
+					<LinkItem href="/" path={path}>
+						Home
+					</LinkItem>
+					<LinkItem href="/works" path={path}>
+						Works
+					</LinkItem>
+				</Stack>
+				<Spacer />
+				<ThemeToggleButton />
+				<Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+					<Menu>
+						<MenuButton
+							as={IconButton}
+							icon={<HamburgerIcon />}
+							variant="outline"
+							aria-label="Options"
+						/>
+
+						<MenuList>
+							<MenuItem as={Link} href="/">
+								Home
+							</MenuItem>
+							<MenuItem as={Link} href="/works">
+								Works
+							</MenuItem>
+						</MenuList>
+					</Menu>
+				</Box>
 			</Container>
 		</Box>
 	)

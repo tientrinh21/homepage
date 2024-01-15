@@ -1,8 +1,9 @@
+'use client'
+
 import { Link } from '@chakra-ui/next-js'
-import { Text, useColorModeValue } from '@chakra-ui/react'
+import { Container, Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import ComputerIcon from './icons/computer'
-import { ReactNode } from 'react'
 
 const LogoBox = styled.span`
 	font-weight: bold;
@@ -22,8 +23,10 @@ const Logo = () => {
 				<ComputerIcon />
 				<Text
 					color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-					fontFamily='M PLUS Rounded 1c", sans-serif'
+					fontFamily="M PLUS Rounded 1c, sans-serif"
 					fontWeight="bold"
+					letterSpacing={0.125}
+					ml={0.25}
 				>
 					Tien Trinh
 				</Text>

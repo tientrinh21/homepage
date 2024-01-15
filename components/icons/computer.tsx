@@ -1,6 +1,6 @@
 import { useColorModeValue } from '@chakra-ui/react'
-import { Player } from '@lordicon/react'
 import { useEffect, useRef, useState } from 'react'
+import { Player } from '@lordicon/react'
 
 const ICON = require('@/public/computer-light.json')
 
@@ -29,7 +29,7 @@ const ComputerIcon = () => {
 				ref={playerRef}
 				icon={ICON}
 				size={25}
-				colorize={useColorModeValue('#000', undefined)}
+				colorize={useColorModeValue(undefined, '#fff')}
 				onComplete={onCompleteAnimation}
 			/>
 		</div>
