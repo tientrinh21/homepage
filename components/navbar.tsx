@@ -53,7 +53,7 @@ const NavBar = ({ path }: { path: string }) => {
 			position="fixed"
 			as="nav"
 			w="100%"
-			pt={2}
+			py={2}
 			bg={useColorModeValue('#ffffff40', '#20202380')}
 			backdropFilter="auto"
 			backdropBlur="10px"

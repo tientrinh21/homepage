@@ -6,14 +6,22 @@ const ThemeToggleButton = () => {
 	const { toggleColorMode } = useColorMode()
 
 	return (
-		<AnimatePresence>
-			<IconButton
-				aria-label="Toggle theme"
-				colorScheme={useColorModeValue('purple', 'orange')}
-				icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
-				onClick={toggleColorMode}
-				borderRadius="lg"
-			/>
+		<AnimatePresence initial={false} mode="wait">
+			<motion.div
+				key={useColorModeValue('light', 'dark')}
+				initial={{ y: -15, opacity: 0 }}
+				animate={{ y: 0, opacity: 1 }}
+				exit={{ y: 15, opacity: 0 }}
+				transition={{ duration: 0.2 }}
+			>
+				<IconButton
+					aria-label="Toggle theme"
+					colorScheme={useColorModeValue('purple', 'orange')}
+					icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
+					onClick={toggleColorMode}
+					borderRadius="lg"
+				/>
+			</motion.div>
 		</AnimatePresence>
 	)
 }
