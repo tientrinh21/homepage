@@ -24,7 +24,7 @@ const components = {
 }
 
 const fonts = {
-	heading: 'var(--font-mplus)',
+	heading: 'var(--font-mplus), sans-serif',
 }
 
 const config = {

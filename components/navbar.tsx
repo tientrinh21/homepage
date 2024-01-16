@@ -77,9 +77,10 @@ const NavBar = ({ path }: { path: string }) => {
 					<LinkItem href="/" path={path}>
 						Home
 					</LinkItem>
-					<LinkItem href="/works" path={path}>
+					{/* TODO */}
+					{/* <LinkItem href="/works" path={path}>
 						Works
-					</LinkItem>
+					</LinkItem> */}
 				</Stack>
 
 				{/* With Flex and Spacer, the children will span the entire width of the container */}

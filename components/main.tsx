@@ -88,14 +88,15 @@ const Main = () => {
 					young students stay focused.
 				</Paragraph>
 				<Flex justifyContent="center" my={6} gap={{ base: 2, md: 4 }}>
-					<Link href="/works">
+					{/* TODO */}
+					{/* <Link href="/works">
 						<Button
 							rightIcon={<ChevronRightIcon />}
 							colorScheme="teal"
 						>
 							Works
 						</Button>
-					</Link>
+					</Link> */}
 					<Link
 						href="https://drive.google.com/file/d/1E6zj39eKiCS-CSJp0V5dtTU6rpVaa5gN/view"
 						isExternal
