@@ -37,7 +37,7 @@ const components = {
 }
 
 const fonts = {
-	heading: 'M PLUS Rounded 1c',
+	heading: 'var(--font-mplus)',
 }
 
 const colors = {

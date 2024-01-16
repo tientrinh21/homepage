@@ -1,7 +1,7 @@
 'use client'
 
 import { Link } from '@chakra-ui/next-js'
-import { Container, Text, useColorModeValue } from '@chakra-ui/react'
+import { Heading, Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import ComputerIcon from './icons/computer'
 
@@ -18,20 +18,28 @@ const LogoBox = styled.span`
 
 const Logo = () => {
 	return (
-		<Link href="/" scroll={false}>
-			<LogoBox>
-				<ComputerIcon />
-				<Text
-					color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-					fontFamily="M PLUS Rounded 1c, sans-serif"
-					fontWeight="bold"
-					letterSpacing={0.125}
-					ml={0.25}
-				>
-					Tien Trinh
-				</Text>
-			</LogoBox>
-		</Link>
+		<Heading
+			as="h1"
+			size="lg"
+			letterSpacing="tight"
+			display="flex"
+			alignItems="flex-end"
+			mr={5}
+		>
+			<Link href="/" scroll={false}>
+				<LogoBox>
+					<ComputerIcon />
+					<Text
+						color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+						fontFamily="M PLUS Rounded 1c, sans-serif"
+						fontWeight="bold"
+						ml={0.5}
+					>
+						Tien Trinh
+					</Text>
+				</LogoBox>
+			</Link>
+		</Heading>
 	)
 }
 

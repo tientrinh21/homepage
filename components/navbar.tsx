@@ -36,7 +36,7 @@ const LinkItem = ({
 		<Link
 			href={href}
 			p={2}
-			bg={active ? 'grassTeal' : undefined}
+			bg={active ? 'teal.300' : undefined}
 			color={active ? '#202023' : inactiveColor}
 			borderRadius="lg"
 		>
@@ -58,12 +58,7 @@ const NavBar = ({ path }: { path: string }) => {
 			zIndex={1}
 		>
 			<Container display="flex" p={2} maxW="container.md" flexWrap="wrap">
-				<Flex align="center" mr={5}>
-					<Heading as="h1" size="lg" letterSpacing="tighter">
-						<Logo />
-					</Heading>
-				</Flex>
-
+				<Logo />
 				<Stack
 					direction={{ base: 'column', md: 'row' }}
 					display={{ base: 'none', md: 'flex' }}
@@ -79,7 +74,10 @@ const NavBar = ({ path }: { path: string }) => {
 						Works
 					</LinkItem>
 				</Stack>
+
+				{/* With Flex and Spacer, the children will span the entire width of the container */}
 				<Spacer />
+
 				<ThemeToggleButton />
 				<Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
 					<Menu>

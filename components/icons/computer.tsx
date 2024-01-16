@@ -2,7 +2,8 @@ import { useColorModeValue } from '@chakra-ui/react'
 import { useEffect, useRef, useState } from 'react'
 import { Player } from '@lordicon/react'
 
-const ICON = require('@/public/computer-light.json')
+const ICON_LIGHT = require('@/public/computer-light.json')
+const ICON_DARK = require('@/public/computer-dark.json')
 
 const ComputerIcon = () => {
 	const playerRef = useRef<Player>(null)
@@ -27,9 +28,8 @@ const ComputerIcon = () => {
 		>
 			<Player
 				ref={playerRef}
-				icon={ICON}
-				size={25}
-				colorize={useColorModeValue(undefined, '#fff')}
+				icon={useColorModeValue(ICON_LIGHT, ICON_DARK)}
+				size={27}
 				onComplete={onCompleteAnimation}
 			/>
 		</div>
