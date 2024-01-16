@@ -1,20 +1,25 @@
 'use client'
 
 import { Link } from '@chakra-ui/next-js'
-import { Heading, Text, useColorModeValue } from '@chakra-ui/react'
-import styled from '@emotion/styled'
+import { Heading, Text, useColorModeValue, Box } from '@chakra-ui/react'
 import ComputerIcon from './icons/computer'
+import { ReactNode } from 'react'
 
-const LogoBox = styled.span`
-	font-weight: bold;
-	font-size: 18px;
-	display: inline-flex;
-	align-items: center;
-	height: 30px;
-	line-height: 20px;
-	padding: 10px;
-	gap: 5px;
-`
+const LogoBox = ({ children }: { children: ReactNode }) => (
+	<Box
+		fontWeight="bold"
+		fontSize="lg"
+		display="inline-flex"
+		alignItems="center"
+		h={10}
+		lineHeight="shorter"
+		px={2.5}
+		py={1.5}
+		gap={1.5}
+	>
+		{children}
+	</Box>
+)
 
 const Logo = () => {
 	return (

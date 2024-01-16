@@ -1,8 +1,23 @@
-import { MotionConfig, motion } from 'framer-motion'
-import { Box, BoxProps } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
+import { Box, BoxProps, Heading } from '@chakra-ui/react'
 import { ReactNode } from 'react'
 
 const MotionBox = motion<BoxProps>(Box)
+
+const SectionTitle = ({ children }: { children: ReactNode }) => (
+	<Heading
+		as="h3"
+		textDecoration="underline"
+		fontSize={20}
+		textUnderlineOffset={6}
+		textDecorationColor="#525252"
+		textDecorationThickness="4px"
+		mt={3}
+		mb={4}
+	>
+		{children}
+	</Heading>
+)
 
 const Section = ({
 	children,
@@ -20,4 +35,4 @@ const Section = ({
 	</MotionBox>
 )
 
-export default Section
+export { Section, SectionTitle }

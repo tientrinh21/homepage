@@ -4,8 +4,6 @@ import {
 	Container,
 	Box,
 	Stack,
-	Heading,
-	Flex,
 	Menu,
 	MenuItem,
 	MenuList,
@@ -16,9 +14,10 @@ import {
 } from '@chakra-ui/react'
 import { Link } from '@chakra-ui/next-js'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import { ReactNode } from 'react'
+import { ReactNode, use } from 'react'
 import Logo from './logo'
 import ThemeToggleButton from './theme-toggle-button'
+import React from 'react'
 
 const LinkItem = ({
 	href,
@@ -36,8 +35,11 @@ const LinkItem = ({
 		<Link
 			href={href}
 			p={2}
-			bg={active ? 'teal.300' : undefined}
-			color={active ? '#202023' : inactiveColor}
+			fontWeight="medium"
+			bg={active ? useColorModeValue('teal.500', 'teal.200') : undefined}
+			color={
+				active ? useColorModeValue('#f0e7db', '#202023') : inactiveColor
+			}
 			borderRadius="lg"
 		>
 			{children}
@@ -51,13 +53,19 @@ const NavBar = ({ path }: { path: string }) => {
 			position="fixed"
 			as="nav"
 			w="100%"
-			mt={2}
+			pt={2}
 			bg={useColorModeValue('#ffffff40', '#20202380')}
 			backdropFilter="auto"
 			backdropBlur="10px"
 			zIndex={1}
 		>
-			<Container display="flex" p={2} maxW="container.md" flexWrap="wrap">
+			<Container
+				display="flex"
+				py={2}
+				w="container.md"
+				maxW="95%"
+				flexWrap="wrap"
+			>
 				<Logo />
 				<Stack
 					direction={{ base: 'column', md: 'row' }}
@@ -65,7 +73,6 @@ const NavBar = ({ path }: { path: string }) => {
 					w={{ base: 'full', md: 'auto' }}
 					alignItems="center"
 					flexGrow={1}
-					mt={{ base: 4, md: 0 }}
 				>
 					<LinkItem href="/" path={path}>
 						Home

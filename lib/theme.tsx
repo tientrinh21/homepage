@@ -12,19 +12,6 @@ const styles = {
 
 // Add new variants
 const components = {
-	Heading: {
-		variants: {
-			'section-title': {
-				textDecoration: 'underline',
-				fontSize: 20,
-				textUnderlineOffset: 6,
-				textDecorationColor: '#525252',
-				textDecorationThickness: 4,
-				marginTop: 3,
-				marginBottom: 4,
-			},
-		},
-	},
 	Link: {
 		baseStyle: (props: StyleFunctionProps) => ({
 			color: mode('#3d7aed', '#ff63c3')(props),
@@ -40,14 +27,10 @@ const fonts = {
 	heading: 'var(--font-mplus)',
 }
 
-const colors = {
-	grassTeal: '#88ccca',
-}
-
 const config = {
 	initialColorMode: 'dark',
 	useSystemColorMode: true,
 }
 
-const theme = extendTheme({ config, styles, components, fonts, colors })
+const theme = extendTheme({ config, styles, components, fonts })
 export default theme
