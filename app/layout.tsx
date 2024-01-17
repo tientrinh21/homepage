@@ -3,7 +3,7 @@ import { Providers } from './providers'
 import { fonts } from './fonts'
 
 export const metadata: Metadata = {
-	title: 'Tien Trinh - Hompage',
+	title: 'Tien Trinh',
 	description: 'My personal website',
 	icons: {
 		icon: '/icon.png',

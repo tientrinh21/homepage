@@ -24,7 +24,7 @@ const Section = ({
 	delay = 0,
 }: {
 	children: ReactNode
-	delay: number
+	delay?: number
 }) => (
 	<MotionBox
 		initial={{ y: 10, opacity: 0 }}

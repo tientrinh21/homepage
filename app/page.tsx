@@ -3,19 +3,21 @@
 import React from 'react'
 import { usePathname } from 'next/navigation'
 import NavBar from '@/components/navbar'
-import Main from '@/components/main'
 import Footer from '@/components/footer'
+import HomeMain from './home-main'
 
-export default function Home() {
+const Home = () => {
 	const path = usePathname()
 
 	return (
 		<>
 			<NavBar path={path} />
 
-			<Main />
+			<HomeMain />
 
 			<Footer />
 		</>
 	)
 }
+
+export default Home

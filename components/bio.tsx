@@ -2,7 +2,7 @@ import { Box, Flex, Text } from '@chakra-ui/react'
 import { ReactNode } from 'react'
 
 const BioSection = ({ children }: { children: ReactNode }) => (
-	<Flex>{children}</Flex>
+	<Flex mt={4}>{children}</Flex>
 )
 
 const BioYear = ({ children }: { children: ReactNode }) => (
@@ -11,4 +11,8 @@ const BioYear = ({ children }: { children: ReactNode }) => (
 	</Text>
 )
 
-export { BioSection, BioYear }
+const BioInfo = ({ children }: { children: ReactNode }) => (
+	<Text letterSpacing="wide">{children}</Text>
+)
+
+export { BioSection, BioYear, BioInfo }

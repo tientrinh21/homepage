@@ -2,14 +2,11 @@
 
 import { Link } from '@chakra-ui/next-js'
 import { Heading, Text, useColorModeValue, Box } from '@chakra-ui/react'
-// import ComputerIcon from './icons/computer'
 import { ReactNode } from 'react'
-
 import dynamic from 'next/dynamic'
 
-const ComputerIcon = dynamic(() => import('./icons/computer'), {
-	ssr: false,
-})
+// Lazy load with no server-side
+const ComputerIcon = dynamic(() => import('./icons/computer'), { ssr: false })
 
 const LogoBox = ({ children }: { children: ReactNode }) => (
 	<Box

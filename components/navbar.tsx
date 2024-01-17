@@ -52,8 +52,8 @@ const NavBar = ({ path }: { path: string }) => {
 		<Box
 			position="fixed"
 			as="nav"
-			w="100%"
-			py={2}
+			w="full"
+			pt={2}
 			bg={useColorModeValue('#ffffff40', '#20202380')}
 			backdropFilter="auto"
 			backdropBlur="10px"
@@ -62,7 +62,7 @@ const NavBar = ({ path }: { path: string }) => {
 			<Container
 				display="flex"
 				py={2}
-				w="container.md"
+				w="container.lg"
 				maxW="95%"
 				flexWrap="wrap"
 			>
@@ -77,10 +77,9 @@ const NavBar = ({ path }: { path: string }) => {
 					<LinkItem href="/" path={path}>
 						Home
 					</LinkItem>
-					{/* TODO */}
-					{/* <LinkItem href="/works" path={path}>
+					<LinkItem href="/works" path={path}>
 						Works
-					</LinkItem> */}
+					</LinkItem>
 				</Stack>
 
 				{/* With Flex and Spacer, the children will span the entire width of the container */}
