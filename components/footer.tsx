@@ -6,7 +6,7 @@ const Footer = () => (
 
 		<Text mt={1}>
 			Heavily inspired by{' '}
-			<a href="https://github.com/craftzdog" target="_blank">
+			<a href="https://www.craftz.dog/" target="_blank">
 				devaslife
 			</a>
 			. Icons by <a href="https://lordicon.com/">lordicon</a>
