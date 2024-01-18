@@ -26,14 +26,7 @@ const LogoBox = ({ children }: { children: ReactNode }) => (
 
 const Logo = () => {
 	return (
-		<Heading
-			as="h1"
-			size="lg"
-			letterSpacing="tight"
-			display="flex"
-			alignItems="flex-end"
-			mr={5}
-		>
+		<Heading as="h1" size="lg" letterSpacing="tight" display="flex" alignItems="flex-end" mr={5}>
 			<Link href="/" scroll={false}>
 				<LogoBox>
 					<ComputerIcon />

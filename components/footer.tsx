@@ -9,8 +9,7 @@ const Footer = () => (
 			<a href="https://github.com/craftzdog" target="_blank">
 				devaslife
 			</a>
-			. Icons by
-			<a href="https://lordicon.com/">lordicon</a>
+			. Icons by <a href="https://lordicon.com/">lordicon</a>
 		</Text>
 	</Box>
 )

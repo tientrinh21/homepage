@@ -22,10 +22,7 @@ const ComputerIcon = () => {
 	}
 
 	return (
-		<div
-			onMouseEnter={() => setIsHovered(true)}
-			onMouseLeave={() => setIsHovered(false)}
-		>
+		<div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
 			<Player
 				ref={playerRef}
 				icon={useColorModeValue(ICON_LIGHT, ICON_DARK)}

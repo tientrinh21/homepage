@@ -17,6 +17,7 @@
     "@emotion/styled": "^11.11.0",
     "@lordicon/element": "^1.4.2",
     "@lordicon/react": "^1.4.1",
+    "@rive-app/react-canvas": "^4.7.1",
     "framer-motion": "^10.18.0",
     "lottie-web": "^5.12.2",
     "next": "14.0.4",

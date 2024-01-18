@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation'
 import NavBar from '@/components/navbar'
 import Footer from '@/components/footer'
-import WorksMain from './works-main'
+import MongoDBBlogMain from './mongodb-blog-main'
 
 const Works = () => {
 	const path = usePathname()
@@ -12,7 +12,7 @@ const Works = () => {
 		<>
 			<NavBar path={path} />
 
-			<WorksMain />
+			<MongoDBBlogMain />
 
 			<Footer />
 		</>

@@ -1,13 +1,5 @@
 import { Link } from '@chakra-ui/next-js'
-import {
-	Text,
-	LinkBox,
-	LinkOverlay,
-	Image,
-	Card,
-	CardBody,
-	Box,
-} from '@chakra-ui/react'
+import { Text, LinkBox, LinkOverlay, Image, Card, CardBody, Box } from '@chakra-ui/react'
 import { StaticImageData } from 'next/image'
 import { Section } from './section'
 import { ReactNode } from 'react'
@@ -27,25 +19,13 @@ const WorksGridItem = ({
 }) => (
 	<Section delay={delay}>
 		<Card textAlign="justify" size="lg" h="full">
-			<CardBody
-				as={LinkBox}
-				cursor="pointer"
-				h="full"
-				display="flex"
-				flexDirection="column"
-				gap={5}
-			>
+			<CardBody as={LinkBox} cursor="pointer" h="full" display="flex" flexDirection="column" gap={5}>
 				<Box minH="130px">
 					<Image src={thumbnail.src} alt={title} borderRadius="lg" />
 				</Box>
 				<Box>
-					<LinkOverlay as={Link} href={`/works/${id}`} isExternal>
-						<Text
-							mb={1}
-							fontSize="lg"
-							letterSpacing="wide"
-							fontWeight="medium"
-						>
+					<LinkOverlay as={Link} href={`/works/${id}`}>
+						<Text mb={1} fontSize="lg" letterSpacing="wide" fontWeight="medium">
 							{title}
 						</Text>
 					</LinkOverlay>

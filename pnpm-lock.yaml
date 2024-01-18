@@ -29,6 +29,9 @@ dependencies:
   '@lordicon/react':
     specifier: ^1.4.1
     version: 1.4.1(lottie-web@5.12.2)(react@18.2.0)
+  '@rive-app/react-canvas':
+    specifier: ^4.7.1
+    version: 4.7.1(react@18.2.0)
   framer-motion:
     specifier: ^10.18.0
     version: 10.18.0(react-dom@18.2.0)(react@18.2.0)
@@ -1670,6 +1673,19 @@ packages:
 
   /@popperjs/core@2.11.8:
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+    dev: false
+
+  /@rive-app/canvas@2.9.2:
+    resolution: {integrity: sha512-XkrAjhiPl+qf+Tqnl31zICnTmrjpgAz91QEYNk/f52M5quEzU59MR9H2xZRd7+Hm8eJSYezInYYcqxFoTsGVaQ==}
+    dev: false
+
+  /@rive-app/react-canvas@4.7.1(react@18.2.0):
+    resolution: {integrity: sha512-96Bbn0sgcPUYcjGJfw11tImefk52FJTPK4X78WHF4wLMI+xVHhbSv5aDO58eFkcZLF/60eqL08EnyszOOfa6JA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@rive-app/canvas': 2.9.2
+      react: 18.2.0
     dev: false
 
   /@swc/helpers@0.5.2:
