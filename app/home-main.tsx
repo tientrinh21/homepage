@@ -66,7 +66,7 @@ const HomeMain = () => {
 				<Box display={{ sm: 'flex' }} mb={6}>
 					<Flex flexGrow={1} direction="column" justifyContent="center">
 						<Heading as="h2">Tien Trinh</Heading>
-						<Info>Student / Software Developer</Info>
+						<Info>Student / Developer</Info>
 					</Flex>
 
 					<Flex flexShrink={0} mt={{ base: 6, sm: 0 }} ml={{ sm: 6 }} justifyContent="center">
