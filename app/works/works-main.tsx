@@ -12,6 +12,7 @@ import thumbnailBudgetPokemonGo from '@/public/budget-pokemon-go.png'
 import thumbnailTomadoro from '@/public/tomadoro.png'
 import thumbnailSolarSystem from '@/public/solar-system.png'
 import thumbnailMongoDBBlock from '@/public/mongodb-blog.png'
+import thumbnailCareerCommunity from '@/public/career-community.png'
 
 const WorksMain = () => {
 	return (
@@ -22,7 +23,7 @@ const WorksMain = () => {
 				<SectionTitle>Works</SectionTitle>
 			</Section>
 
-			<SimpleGrid columns={[1, 2, 2]} gap={6}>
+			<SimpleGrid columns={[1, 2, 2]} gap={6} mt={8}>
 				<WorksGridItem id="pokedoro" title="Pokedoro" thumbnail={thumbnailPokedoro}>
 					Web app which keep track of todo tasks and let students focus on studying with Pomodoro method
 				</WorksGridItem>
@@ -39,7 +40,24 @@ const WorksMain = () => {
 			</SimpleGrid>
 
 			<Section delay={0.2}>
-				<Divider mt={4} mb={8} />
+				<Divider mb={8} mt={6} />
+				<SectionTitle>Collaborations</SectionTitle>
+			</Section>
+
+			<SimpleGrid columns={[1, 2, 2]} gap={6}>
+				<WorksGridItem
+					id="career-community"
+					title="Career Community"
+					thumbnail={thumbnailCareerCommunity}
+					delay={0.2}
+				>
+					Career Community for Sunkyunkwan University Software student, providing information related to the
+					career.
+				</WorksGridItem>
+			</SimpleGrid>
+
+			<Section delay={0.3}>
+				<Divider mb={8} mt={6} />
 				<SectionTitle>Deprecated works</SectionTitle>
 			</Section>
 
