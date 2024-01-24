@@ -78,9 +78,10 @@ const HomeMain = () => {
 			<Section delay={0.1}>
 				<SectionTitle>👋 About</SectionTitle>
 				<Info>
-					I'm a motivated computer science student who passionate about staying updated with emerging
-					technologies, with hands-on experience in developing and optimizing software solutions. Check out my
-					personal project <Link href="/works/pokedoro">Pokedoro</Link> which help young students stay
+					I'm a motivated computer science student who passionate in building applications for people to
+					elevate their works, especially students. I would love to work on a team in order to build a
+					large-scale application which bring a better value for people's value to the wider public. Check out
+					my personal project <Link href="/works/pokedoro">Pokedoro</Link> which help young age students stay
 					focused.
 				</Info>
 				<Flex justifyContent="center" my={6} gap={{ base: 2, md: 4 }}>
@@ -98,26 +99,41 @@ const HomeMain = () => {
 			</Section>
 
 			<Section delay={0.2}>
-				<SectionTitle>📄 Bio</SectionTitle>
+				<SectionTitle>💻 Experience</SectionTitle>
 				<BioSection>
-					<BioYear>2016 - 2019</BioYear>
-					<BioInfo>Ly Tu Trong High Schools for the Gifted - Vietnam</BioInfo>
-				</BioSection>
-				<BioSection>
-					<BioYear>2021 - Present</BioYear>
+					<BioYear>01 - 07 / 2023</BioYear>
 					<BioInfo>
-						Bachelor of Computer Science and Engineering in{' '}
-						<Link
-							href="https://www.topuniversities.com/universities/sungkyunkwan-universityskku"
-							isExternal
-						>
-							Sungkyunkwan University
-						</Link>{' '}
+						Intern at{' '}
+						<Link href={'http://toba.kr/?page_id=984'} isExternal>
+							Toba Company Ltd.
+						</Link>
 					</BioInfo>
 				</BioSection>
 			</Section>
 
 			<Section delay={0.3}>
+				<SectionTitle>📄 Bio</SectionTitle>
+				<BioSection>
+					<BioYear>2020 - 2021</BioYear>
+					<BioInfo>
+						Bachelor of Computer Science in{' '}
+						<Link href="https://hcmut.edu.vn/en" isExternal>
+							Ho Chi Minh University of Technology
+						</Link>
+					</BioInfo>
+				</BioSection>
+				<BioSection>
+					<BioYear>2021 - Present</BioYear>
+					<BioInfo>
+						Bachelor of Computer Science and Engineering in{' '}
+						<Link href="https://www.skku.edu/eng/" isExternal>
+							Sungkyunkwan University
+						</Link>
+					</BioInfo>
+				</BioSection>
+			</Section>
+
+			<Section delay={0.4}>
 				<SectionTitle>⏲️ Hobby</SectionTitle>
 				<UnorderedList letterSpacing="wide" display="flex" flexDirection="column" gap={2}>
 					<ListItem>

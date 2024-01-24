@@ -19,17 +19,11 @@ const SectionTitle = ({ children }: { children: ReactNode }) => (
 	</Heading>
 )
 
-const Section = ({
-	children,
-	delay = 0,
-}: {
-	children: ReactNode
-	delay?: number
-}) => (
+const Section = ({ children, delay = 0 }: { children: ReactNode; delay?: number }) => (
 	<MotionBox
 		initial={{ y: 10, opacity: 0 }}
 		animate={{ y: 0, opacity: 100, transition: { duration: 0.8, delay } }}
-		mb={6}
+		mb={8}
 	>
 		{children}
 	</MotionBox>

@@ -39,7 +39,7 @@ const WorksMain = () => {
 			</SimpleGrid>
 
 			<Section delay={0.2}>
-				<Divider mt={6} mb={8} />
+				<Divider mt={4} mb={8} />
 				<SectionTitle>Deprecated works</SectionTitle>
 			</Section>
 
