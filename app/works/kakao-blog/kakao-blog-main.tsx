@@ -23,8 +23,9 @@ const KakaoBlogMain = () => {
 					<Tech color="cyan">Netlify CMS</Tech>
 				</Box>
 				<Paragraph>
-					A blog build with JAM stack using Vanilla JS, Netlify CMS and Hugo (static site generator). The blog
-					is suitable for a personal who wants to share about his/her experience in any aspect of life.
+					A blog build with JAM stack using Vanilla JS, Netlify CMS (content management system) and Hugo
+					(static site generator). The blog is suitable for a personal who wants to share about his/her
+					experience in any aspect of life.
 				</Paragraph>
 			</Section>
 

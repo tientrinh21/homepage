@@ -35,7 +35,7 @@ const WorksMain = () => {
 					lo-fi music.
 				</WorksGridItem>
 				<WorksGridItem id="kakao-blog" title="Kakao Friends Blog" thumbnail={thumbnailKakaoBlog} delay={0.1}>
-					Blog built with JAM stack using Vanilla JS, Netlify CMS and Hugo (static site generator)
+					Blog built with JAM stack using Vanilla JS, Netlify CMS and Hugo
 				</WorksGridItem>
 			</SimpleGrid>
 

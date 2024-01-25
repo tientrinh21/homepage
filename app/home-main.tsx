@@ -99,11 +99,11 @@ const HomeMain = () => {
 			</Section>
 
 			<Section delay={0.2}>
-				<SectionTitle>💻 Experience</SectionTitle>
+				<SectionTitle>🏢 Experience</SectionTitle>
 				<BioSection>
 					<BioYear>01 - 07 / 2023</BioYear>
 					<BioInfo>
-						Intern at{' '}
+						Intern as Software Developer at{' '}
 						<Link href={'http://toba.kr/?page_id=984'} isExternal>
 							Toba Company Ltd.
 						</Link>
@@ -112,7 +112,7 @@ const HomeMain = () => {
 			</Section>
 
 			<Section delay={0.3}>
-				<SectionTitle>📄 Bio</SectionTitle>
+				<SectionTitle>📝 Bio</SectionTitle>
 				<BioSection>
 					<BioYear>2020 - 2021</BioYear>
 					<BioInfo>
@@ -134,7 +134,14 @@ const HomeMain = () => {
 			</Section>
 
 			<Section delay={0.4}>
-				<SectionTitle>⏲️ Hobby</SectionTitle>
+				<SectionTitle>💻 Skill</SectionTitle>
+				<UnorderedList letterSpacing="wide" display="flex" flexDirection="column" gap={2}>
+					<ListItem>Hi</ListItem>
+				</UnorderedList>
+			</Section>
+
+			<Section delay={0.5}>
+				<SectionTitle>⏰ Hobby</SectionTitle>
 				<UnorderedList letterSpacing="wide" display="flex" flexDirection="column" gap={2}>
 					<ListItem>
 						Books -{' '}
