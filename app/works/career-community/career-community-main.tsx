@@ -22,9 +22,9 @@ const CareerCommunityMain = () => {
 					<Tech color="blue">PosgreSQL</Tech>
 				</Box>
 				<Paragraph>
-					Career Community is a service for SKKU Software Student that uses various human networks such as
+					Career Community is a service for SKKU Software Student that uses various human networks including
 					students, graduates, and professors in Sungkyunkwan University's software department to share
-					various and reliable career information such as department announcements, internships, and external
+					various and reliable career information, e.g., department announcements, internships, and external
 					recruitment announcements. This will give college students convenience to develop their personalized
 					careers.
 				</Paragraph>
