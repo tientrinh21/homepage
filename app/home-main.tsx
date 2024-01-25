@@ -135,7 +135,15 @@ const HomeMain = () => {
 			<Section delay={0.4}>
 				<SectionTitle>💻 Skill</SectionTitle>
 				<UnorderedList letterSpacing="wide" display="flex" flexDirection="column" gap={2}>
-					<ListItem>Hi</ListItem>
+					<ListItem>
+						<strong>Programming:</strong> JavaScript/Typescript, C/C++, C#, Java, Kotlin, Go
+					</ListItem>
+					<ListItem>
+						<strong>Framework:</strong> Next.js, React/React Native, Express.js, .NET
+					</ListItem>
+					<ListItem>
+						<strong>Languages:</strong> English (Full Professional), Korean (Professional Working)
+					</ListItem>
 				</UnorderedList>
 			</Section>
 
