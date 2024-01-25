@@ -24,8 +24,9 @@ const CareerCommunityMain = () => {
 				<Paragraph>
 					Career Community is a service for SKKU Software Student that uses various human networks such as
 					students, graduates, and professors in Sungkyunkwan University's software department to share
-					various and reliable career information, which can help college students develop personalized
-					careers, furthermore recruit, announce, and share information.
+					various and reliable career information such as department announcements, internships, and external
+					recruitment announcements. This will give college students convenience to develop their personalized
+					careers.
 				</Paragraph>
 			</Section>
 
