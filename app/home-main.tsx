@@ -79,10 +79,9 @@ const HomeMain = () => {
 				<SectionTitle>👋 About</SectionTitle>
 				<Info>
 					I'm a motivated computer science student who passionate about building applications for people to
-					elevate their works, especially students. I would love to work on a team in order to build a
-					large-scale application which bring a better value for people's value to the wider public. Check out
-					my personal project <Link href="/works/pokedoro">Pokedoro</Link> which help young age students stay
-					focused.
+					elevate their works, especially students. I would love to collaborate on ambitious projects that
+					make a real difference for the broader community. Check out my personal project{' '}
+					<Link href="/works/pokedoro">Pokedoro</Link> which help young age students stay focused.
 				</Info>
 				<Flex justifyContent="center" my={6} gap={{ base: 2, md: 4 }}>
 					<Link href="/works">
