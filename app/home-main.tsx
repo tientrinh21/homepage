@@ -78,7 +78,7 @@ const HomeMain = () => {
 			<Section delay={0.1}>
 				<SectionTitle>👋 About</SectionTitle>
 				<Info>
-					I'm a motivated computer science student who passionate in building applications for people to
+					I'm a motivated computer science student who passionate about building applications for people to
 					elevate their works, especially students. I would love to work on a team in order to build a
 					large-scale application which bring a better value for people's value to the wider public. Check out
 					my personal project <Link href="/works/pokedoro">Pokedoro</Link> which help young age students stay
